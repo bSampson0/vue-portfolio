@@ -34,17 +34,15 @@
         </v-col>
       </v-row>
     </v-container>
-    <ProjectsPreview />
+    <!-- <ProjectsPreview /> -->
   </div>
 </template>
 
 <script>
-import ProjectsPreview from "@/components/ProjectsPreview.vue";
 import Quote from "@/components/Quote.vue";
 export default {
   name: "Home",
   components: {
-    ProjectsPreview,
     Quote,
   },
   data() {
