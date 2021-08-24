@@ -57,4 +57,7 @@ Button {
   transform: translateX(10px);
   opacity: 0;
 }
+a {
+  text-decoration: none;
+}
 </style>
