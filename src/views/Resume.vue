@@ -1,6 +1,6 @@
 <template>
   <div id="resume">
-    <v-container class="mt-12">
+    <v-container class="mt-12 mb-12">
       <v-row class="mb-10" align="center">
         <v-col cols="12" sm="8" lg="6">
           <h1>Biography</h1>
@@ -80,7 +80,7 @@
           </v-timeline>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row class="mt-12 mb-12">
         <v-col cols="12">
           <h2>
             Skills <span style="font-size: 0.5em">that pay the bills.</span>
@@ -117,6 +117,8 @@
             />
           </span>
         </v-col>
+      </v-row>
+      <v-row class="mt-12 mb-12">
         <v-col cols="12" class="mt-10">
           <h2>
             Certificates / Classes
