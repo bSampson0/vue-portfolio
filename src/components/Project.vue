@@ -9,12 +9,14 @@
       <v-card-text>
         {{ summary }}
       </v-card-text>
-      <v-card-actions>
-        <v-btn color="primary" :href="liveUrl" target="_blank"
-          >See it Live</v-btn
+      <v-card-actions class="ma-2">
+        <v-btn color="primary" :href="liveUrl" text target="_blank"
+          ><v-icon class="mr-3">mdi-eye</v-icon>See it Live</v-btn
         >
         <v-spacer></v-spacer>
-        <v-btn color="primary" :href="codeUrl" target="_blank">View Code</v-btn>
+        <v-btn color="accent" text :href="codeUrl" target="_blank"
+          ><v-icon class="mr-3">mdi-code-tags</v-icon>View Code</v-btn
+        >
       </v-card-actions>
     </v-card>
   </div>

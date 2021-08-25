@@ -53,12 +53,10 @@
       </div>
       <div>
         <template v-if="loginState">
-          <v-btn color="primary" class="ml-4" text @click="logout"
-            >Logout</v-btn
-          >
+          <v-btn color="primary" class="ml-4" @click="logout">Logout</v-btn>
         </template>
         <template v-else>
-          <v-btn color="primary" class="ml-4" text to="/login">Login</v-btn>
+          <v-btn color="accent" class="ml-4" to="/login">Login</v-btn>
         </template>
       </div>
     </v-app-bar>
@@ -94,6 +92,5 @@ export default {
 .logo-title {
   font-family: "Stalemate", cursive;
   font-size: 2em;
-  color: #dc6133;
 }
 </style>

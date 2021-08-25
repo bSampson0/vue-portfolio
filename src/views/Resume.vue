@@ -27,7 +27,6 @@
         <v-col cols="12" md="2" class="personal-info d-none d-lg-block">
           <h3>Personal Info</h3>
           <strong>Email:</strong> Bnicerrr@gmail.com <br />
-          <strong>Phone:</strong> 541-243-4564 <br />
           <strong>Github: </strong>
           <a href="https://github.com/bSampson0" target="_blank"
             >https://github.com/bSampson0</a
@@ -43,7 +42,11 @@
             https://codepen.io/bSampson0
           </a>
           <br /><br />
-          <a href=""><v-icon x-small>mdi-download</v-icon> Download Resume</a>
+          <a
+            target="_blank"
+            href="https://firebasestorage.googleapis.com/v0/b/personal-2a31a.appspot.com/o/BryceSampson_Resume.pdf?alt=media&token=1289de0c-3689-42f1-a646-b84677e0061e"
+            ><v-icon x-small>mdi-download</v-icon> Download Resume</a
+          >
         </v-col>
       </v-row>
       <v-row>

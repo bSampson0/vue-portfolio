@@ -45,7 +45,6 @@
           <h2>Contact Info</h2>
           <p>
             <strong>Email:</strong> Bnicerrr@gmail.com <br />
-            <strong>Phone:</strong> 541-243-4564 <br />
             <strong>Github: </strong>
             <a href="https://github.com/bSampson0" target="_blank"
               >https://github.com/bSampson0</a
