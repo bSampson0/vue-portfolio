@@ -42,10 +42,9 @@
             https://codepen.io/bSampson0
           </a>
           <br /><br />
-          <a
-            target="_blank"
-            href="https://firebasestorage.googleapis.com/v0/b/personal-2a31a.appspot.com/o/bryce_fullstack_resume.pdf?alt=media&token=f8784cb7-321d-4c48-b93f-2ca2e3fd3750"
-            ><v-icon x-small>mdi-download</v-icon> Download Resume</a
+          <v-btn text color="primary" download href="bryce_fullstack_resume.pdf"
+            ><v-icon x-small class="mr-3">mdi-download</v-icon>Download
+            Resume</v-btn
           >
         </v-col>
       </v-row>
