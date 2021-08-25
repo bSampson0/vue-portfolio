@@ -18,27 +18,35 @@
                   outlined
                   v-model="name"
                   label="Name"
+                  :rules="nameRules"
                   required
                 ></v-text-field>
                 <v-text-field
                   outlined
-                  v-model="subject"
-                  label="Subject"
+                  v-model="email"
+                  label="Email"
+                  :rules="emailRules"
+                  type="email"
                   required
                 ></v-text-field>
                 <v-textarea
                   outlined
                   label="Message"
                   v-model="message"
+                  :rules="messageRules"
+                  required
                 ></v-textarea>
               </v-form>
             </v-card-text>
             <v-card-actions>
-              <v-btn width="100%">
+              <v-btn width="100%" @click="send" :disabled="!valid">
                 Send
                 <v-icon right dark> mdi-send </v-icon>
               </v-btn>
             </v-card-actions>
+            <div class="message-return" v-if="messageSent">
+              {{ successMessage }}
+            </div>
           </v-card>
         </v-col>
         <v-col cols="12" sm="6">
@@ -67,20 +75,41 @@
 </template>
 
 <script>
+import { db } from "@/plugins/firebase";
 export default {
   data() {
     return {
       name: "",
-      subject: "",
+      email: "",
       message: "",
-      valid: true,
+      successMessage: "",
+      messageSent: false,
+      valid: false,
+      emailRules: [
+        (v) => !!v || "How do I reach you?",
+        (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      ],
+      nameRules: [(v) => !!v || "What is your name?"],
+      messageRules: [(v) => !!v || "You have to leave a message!"],
     };
   },
   methods: {
-    send() {
-      console.log(
-        `Sending Message: ${this.name}, ${this.subject}, ${this.message}`
-      );
+    async send() {
+      if (this.valid) {
+        try {
+          await db.collection("messages").add({
+            name: this.name,
+            email: this.email,
+            message: this.message,
+          });
+          this.successMessage = "Your message has been sent.";
+        } catch (error) {
+          console.log(error);
+          this.successMessage = "Your message failed to send.";
+        }
+      }
+      this.messageSent = true;
+      this.$refs.contact.reset();
     },
   },
 };
