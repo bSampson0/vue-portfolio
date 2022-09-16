@@ -28,8 +28,8 @@
       <v-row>
         <v-col>
           <Quote
-            quote="Programming is like kicking yourself in the face, sooner or later your nose will bleed."
-            author="Kyle Woodbury"
+            quote="If I had an hour to solve a problem I'd spend 55 minutes thinking about the problem and 5 minutes thinking about solutions."
+            author="Albert Einstein"
           />
         </v-col>
       </v-row>
