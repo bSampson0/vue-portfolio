@@ -7,11 +7,12 @@
           <p>
             I built this site for one reason, to show off what I love doing.
             Building super clean websites! What started out as a one off project
-            (design a 404 page), quickly became an obsession. Everyday I am
-            working on something to improve my skillset as a developer. I really
-            enjoy Javascript and working with front end frameworks like Vue and
-            React. I typically use Google services to host projects and have
-            experience using AWS. SQL or noSQL, doesn't matter. I love them all!
+            (design a 404 page), quickly became an obsession. Now, Everyday I am
+            working on something to improve my skillset as a developer. Over the 
+            course of my carreer I have been able to work with many different languages
+            and now consider my self language-agnostic, understanding that each language
+            has it's own strengths and weaknesses. Frontend or backend, I find joy in
+            working with all aspects of software developement.
           </p>
           <v-btn large color="primary" to="/contact">Contact Me</v-btn>
         </v-col>
